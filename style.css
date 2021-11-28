@@ -1,0 +1,37 @@
+body {
+  font-family: "ibm plex";
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2a2a2a;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+nav {
+  font-family: "young";
+  font-size: 24px;
+  background-color: #00b98d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 5px 30px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  min-height: 100vh;
+}
