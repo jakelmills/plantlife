@@ -26,5 +26,20 @@ slideArea.addEventListener("click", function(){
   images[currentSlide].style.animation = "fade 0.5s"
 })
 
-//when i put my mouse over the slide area, put all of the images in a random place
-slideArea.addEventListener("mouseover")
+//when i put my mouse over the slide area, put all of the images in a
+//random place
+slideArea.addEventListener("mouseenter", function(){
+  images.forEach(image => {
+    const x = 25 * Math.floor(Math.random()*5) - 50
+    const y = 25 * Math.floor(Math.random()*5) - 50
+
+    image.style.transform = `translate(${x}px, ${y}px)`
+  })
+})
+
+//when mouse is moved away reset image position
+slideArea.addEventListener("mouseleave", function(){
+  images.forEach(image => {
+    image.style.transform = ""
+  })
+})
