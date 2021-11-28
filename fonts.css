@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "young";
+  src: url("fonts/youngserif.woff2"), url("fonts/youngserif.woff");
+}
+
+@@font-face {
+  font-family: "ibm plex";
+  src: url("fonts/ibm-plex-mono.woff2"), url("fonts/ibm-plex-mono.woff");
+}
