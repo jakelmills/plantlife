@@ -15,7 +15,16 @@ slideArea.addEventListener("click", function(){
   }
 
   z ++
+
+  //remove the animation style from every imaged
+  images.forEach(image => {
+    image.style.animation = ""
+  })
+
   //pick the right image
   images[currentSlide].style.zIndex = z
-
+  images[currentSlide].style.animation = "fade 0.5s"
 })
+
+//when i put my mouse over the slide area, put all of the images in a random place
+slideArea.addEventListener("mouseover")
